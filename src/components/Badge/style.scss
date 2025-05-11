@@ -1,0 +1,20 @@
+.c_badge {
+  display: inline-block;
+  height: 24px;
+  line-height: 17px;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  width: max-content;
+}
+
+.c_badge__primary {
+  background: #00F4E2;
+  background: linear-gradient(90deg, rgba(0, 244, 226, 1) 0%, rgba(0, 255, 127, 1) 50%);
+}
+
+.c_badge__aqua {
+  background-color: #7DF0BA;
+}

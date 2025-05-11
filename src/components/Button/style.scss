@@ -1,0 +1,31 @@
+.c_button {
+  color: #FFFFFF;
+  font-family: 'BR Sonoma', sans-serif;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgb(231, 229, 229);
+  }
+  &.c_button__back {
+    height: 64px;
+    padding: 20px 40px;
+    border-radius: 40px;
+    background-color: #03050F;
+  }
+  &.c_button__red {
+    height: 48px;
+    padding: 13px 20px;
+    border-radius: 32px;
+    background-color: #FF1C44;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .c_button {
+    width: 100%;
+  }
+}

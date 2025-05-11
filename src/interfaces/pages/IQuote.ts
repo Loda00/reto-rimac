@@ -1,0 +1,1 @@
+export type For = 'FOR_ME' | 'FOR_OTHERS' | ''

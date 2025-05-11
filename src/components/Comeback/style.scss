@@ -1,0 +1,17 @@
+.c_comeback {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  & > .c_comeback__text {
+    color: #4F4FFF;
+    font-size: 18px;
+    user-select: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .c_comeback {
+    display: none;
+  }
+}
