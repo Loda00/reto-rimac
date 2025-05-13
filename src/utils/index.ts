@@ -2,7 +2,7 @@ export const formatDate = (date: Date): string => {
   const day = String(date.getDate()).padStart(2, '0');
   const month = String(date.getMonth() + 1).padStart(2, '0');
   const year = date.getFullYear();
-  return `${day}-${month}-${year}`;
+  return `${month}-${day}-${year}`;
 }
 
 export const diferenciaEnAnios = (birth: string, today: string): number => {
@@ -10,9 +10,9 @@ export const diferenciaEnAnios = (birth: string, today: string): number => {
   const date2 = new Date(today);
 
   const diferenciaEnMilisegundos = Math.abs(date2.getTime() - date1.getTime());
-
+  
   const diferenciaEnAnios = diferenciaEnMilisegundos / (1000 * 60 * 60 * 24 * 365.25);
-
+  
   return Math.floor(diferenciaEnAnios);
 }
 
